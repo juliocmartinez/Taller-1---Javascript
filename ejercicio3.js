@@ -7,6 +7,12 @@
 let r = parseInt(prompt("Digite el radio del cilindro"));
 let h = parseInt(prompt("Digite la altura del cilindro"));
 
+while ((isNaN(r) && isNaN(h)) ||(isNaN(r) || isNaN(h))){
+    r = parseInt(prompt("Digite el radio del cilindro"));
+    h = parseInt(prompt("Digite la altura del cilindro"));
+
+}
+
 
 function volCilindro(r,h){
     let vol = Math.PI * Math.pow(r,2)*h;
