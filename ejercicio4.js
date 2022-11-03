@@ -18,4 +18,4 @@ ordenarNum.sort((r,h)=>{
 
 })
 
-console.log(ordenarNum2)
+console.log(ordenarNum)
