@@ -4,14 +4,14 @@
  *  (H). Formula: (VOL = π * R^2 * H), 
  * (AREA_LATERAL = 2 * π * R * H)
  */
-let r = parseInt(prompt("Digite el radio del cilindro"));
-let h = parseInt(prompt("Digite la altura del cilindro"));
+let r,h;
+    
 
-while ((isNaN(r) && isNaN(h)) ||(isNaN(r) || isNaN(h))){
+
+do {
     r = parseInt(prompt("Digite el radio del cilindro"));
     h = parseInt(prompt("Digite la altura del cilindro"));
-
-}
+} while ((isNaN(r) && isNaN(h)) ||(isNaN(r) || isNaN(h)));
 
 
 function volCilindro(r,h){
